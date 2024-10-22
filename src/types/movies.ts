@@ -1,5 +1,5 @@
 // 영화 데이터의 타입
-interface Movie {
+export interface Movie {
   createdAt: number;
   updatedAt: number;
   id: number;
@@ -16,7 +16,7 @@ interface Movie {
 }
 
 // API 응답의 타입
-interface MoviesResponse {
+export interface MoviesResponse {
   count: number;
   next: string | null;
   previous: string | null;

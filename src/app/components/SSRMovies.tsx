@@ -1,6 +1,8 @@
 "use client";
 
 import getMoviesData from "@/apis/getMoviesData";
+import { MoviesResponse } from "@/types/movies";
+import Image from "next/image";
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 
@@ -26,10 +28,11 @@ const SSRMovies = () => {
             key={movie.id}
             className="border rounded-lg shadow-lg overflow-hidden"
           >
-            <img
+            <Image
               src={movie.posterUrl}
               alt={movie.title}
-              className="w-full h-48 object-cover"
+              width={500}
+              height={500}
             />
             <div className="p-4">
               <h2 className="text-lg font-semibold">{movie.title}</h2>
