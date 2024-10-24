@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Select SSR or CSR",
+  description: "This is the Rendered page for Selection of SSR or CSR.",
+};
+
 const Home = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">

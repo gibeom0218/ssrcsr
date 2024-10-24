@@ -6,6 +6,11 @@ import {
 import SSRMovies from "../components/SSRMovies";
 import getMoviesData from "@/apis/getMoviesData";
 
+export const metadata = {
+  title: "SSR Page",
+  description: "This is the Rendered page for SSR.",
+};
+
 const SSR = async () => {
   const queryClient = new QueryClient();
 
