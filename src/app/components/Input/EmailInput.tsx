@@ -1,8 +1,9 @@
 import React from "react";
+import SignUpFormData from "@/types/SignUpFormData";
 import { UseFormRegister, FieldError } from "react-hook-form";
 
 interface EmailInputProps {
-  register: UseFormRegister<any>;
+  register: UseFormRegister<SignUpFormData>;
   error?: FieldError;
 }
 
